@@ -1,0 +1,102 @@
+/* Dashboard Layout */
+.dashboard-container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #fefaf3;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.dashboard-container h2 {
+  text-align: center;
+  color: #4e3d3d;
+  margin-bottom: 20px;
+}
+
+/* Task Form */
+.task-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.task-form input,
+.task-form textarea,
+.task-form select,
+.task-form button {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.task-form button {
+  background-color: #8c7b75;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.task-form button:hover {
+  background-color: #6f5d57;
+}
+
+/* Task Cards */
+.task-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.task-card {
+  background-color: #fffdf9;
+  border: 1px solid #ddd;
+  border-left: 5px solid #8c7b75;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 1px 2px 5px rgba(0,0,0,0.05);
+}
+
+.task-card h3 {
+  margin: 0;
+  color: #3a2f2f;
+}
+
+.task-card p {
+  margin: 5px 0;
+  color: #555;
+  font-size: 0.95rem;
+}
+
+.task-card button {
+  margin-top: 10px;
+  padding: 6px 12px;
+  background-color: #e74c3c;
+  border: none;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.task-card button:hover {
+  background-color: #c0392b;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .dashboard-container {
+    margin: 20px 10px;
+    padding: 15px;
+  }
+
+  .task-form,
+  .task-card {
+    font-size: 0.95rem;
+  }
+}
